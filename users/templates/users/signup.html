@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMate Signup</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">  
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <div class="logo">
+                <img src="{% static 'images/logo1.png' %}" alt="TaskMate Logo">
+            </div>
+            <img src="{% static 'images/Signup.png' %}" alt="TaskMate Mockup" class="mockup-image">
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <!-- Welcome Message -->
+            <div class="welcome-message">
+                <h2>Welcome Aboard! 🎉</h2>
+                <p>Empowering You to Do More, Together!</p>
+
+            <!-- Signup Form -->
+            <form class="signup-form">
+                <!-- Name Fields -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Example@email.com" required>
+                </div>
+
+                <!-- Password Fields -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="at least 8 characters" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="at least 8 characters" required>
+                </div>
+                <!-- Submit Button -->
+                <button type="submit" class="create-account">Create Account</button>
+
+                <!-- Login Link -->
+                <p class="login-link">
+                    Already have an account? <a href="#">Login</a>
+                </p>
+
+                <!-- Separator -->
+                <div class="separator">
+                    <span>Or</span>
+                </div>
+
+                <!-- Social Login -->
+                <div class="social-login">
+                    <button type="button" class="google-login">
+                        <img src="{% static 'images/image.png' %}" alt="Google Logo" class="img">
+                        Sign up with Google
+                    </button>
+                </div>
+            </form>
+
+        </div>
+
+            <!-- Footer -->
+            <footer>&copy; 2024 ALL RIGHTS RESERVED</footer>
+        </div>
+    </div>
+</body> 
+</html>

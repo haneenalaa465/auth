@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 24px;
+    gap: 20px;
+}
+
+.left-section {
+    flex: 1;
+    max-width: 100%;
+    text-align: center;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px; 
+    width: 100%;
+    height: 100px;
+}
+
+.logo img {
+    width: 20%; 
+}
+
+.mockup-image {
+    max-width: 55%;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.right-section {
+    flex: 1;
+    max-width: 200px;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+}
+
+.welcome-message h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.welcome-message p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px; /* Fixed incorrect spacing */
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 14px;
+}
+
+.form-row {
+    display: flex;               /* Enable flexbox for side-by-side layout */
+    gap: 40px;                   /* Add space between the two fields */
+    margin-bottom: 1px;         /* Add spacing below the row */
+}
+
+.form-group {
+    flex: 1;                     /* Allow each field to take equal width */
+}
+
+label {
+    display: block;              /* Ensure label stays above the input */
+    font-size: 14px;
+    font-weight: 550;
+    color: #333;
+    margin-bottom: 5px;          /* Add spacing between label and input */
+    text-align: left;
+}
+
+input {
+    width: 100%;                 /* Input takes the full width of the form-group */
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #b7b3b3;
+    border-radius: 8px;
+    background-color: #f1eff9ae;
+}
+
+input:focus {
+    border-color: #8661FF;
+    outline: none; /* Improved focus style */
+    box-shadow: 0 0 4px rgba(134, 97, 255, 0.5);
+}
+
+.create-account {
+    width: 100%; /* Ensures the button matches the input field width */
+    background-color: #8661FF;
+    color: #FFF;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px; /* Add some space above */
+}
+
+.create-account:hover {
+    background-color: #a560fb;
+}
+
+.login-link {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.login-link a {
+    color: #4B3DFE;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline; 
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.google-login {
+    padding: 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #e2e8ea;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    transition: background-color 0.3s ease;
+}
+
+.google-login:hover {
+    background-color: #d6dadc;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #CCC;
+}
+
+.img {
+    width: 24px; 
+    height: 24px;
+    vertical-align: middle;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #AAA;
+    text-align: center;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Authentication</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" >
+</head>
+<body>
+
+
+    {% block content %}
+
+    <div class="container mt-5">
+        <h2 class="text-info text-center mt-5">Welcome to Authy App</h2>
+        <div class="row mt-5">
+            <a class="btn btn-info col-md-4 mx-auto" href="{% url 'signup' %}">Sign Up</a>
+            <a class="btn btn-info col-md-4 mx-auto" href="{% url 'login' %}">Login</a>          
+        </div>
+
+    </div>
+
+    {% endblock %}
+
+
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>let errorElements = document.getElementsByClassName('alert-error');
+        [...errorElements].forEach(el=>{el.classList.add('alert-danger')})</script>
+</body>
+</html>
